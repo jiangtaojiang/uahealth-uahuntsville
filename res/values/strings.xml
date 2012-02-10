@@ -6,5 +6,7 @@
     <string name="un">Username:</string>
     <string name="pwd">Password:</string>
     <string name="login">Login</string>
+    <string name="logo">imWell logo</string>
+    <string name="configBtnText">config</string>
 
 </resources>
