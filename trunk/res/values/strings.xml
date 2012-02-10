@@ -2,6 +2,9 @@
 <resources>
 
     <string name="hello">Hello World, ImWellActivity!</string>
-    <string name="app_name">ImWell</string>
+    <string name="app_name">imWell</string>
+    <string name="un">Username:</string>
+    <string name="pwd">Password:</string>
+    <string name="login">Login</string>
 
 </resources>
