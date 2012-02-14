@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class ImWellActivity extends Activity {
 	Button btnConfigure;
+	Button btnLogin;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,14 @@ public class ImWellActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent("edu.UAH.Configure"));				
+			}
+		});
+        btnLogin = (Button)findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent("edu.UAH.Sensor"));			
 			}
 		});
     }

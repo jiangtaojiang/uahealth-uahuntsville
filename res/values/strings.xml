@@ -12,5 +12,11 @@
     <string name="configure_save_to_file">Save To File?</string>
     <string name="configure_remember_me">Remember Me?</string>
     <string name="configure_save">Save Configurations</string>
+    <string name="sensor_hr">71</string>
+    <string name="sensor_rr">12</string>
+    <string name="sensor_hr_text">heartrate</string>
+    <string name="sensor_rr_text">respiratory rate</string>
+    <string name="sensor_event_button_text">Event</string>
+    <string name="sensor_session_duration_text">00:00:00</string>
 
 </resources>
