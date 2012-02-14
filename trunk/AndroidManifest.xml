@@ -25,6 +25,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SensorActivity"
+            android:label="Sensor">
+            <intent-filter>
+                <action android:name="edu.UAH.Sensor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
