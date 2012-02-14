@@ -8,5 +8,7 @@
     <string name="login">Login</string>
     <string name="logo">imWell logo</string>
     <string name="configBtnText">config</string>
+    <string name="configure_server">Server Url:</string>
+    <string name="configure_save_to_file">Save To File?</string>
 
 </resources>
