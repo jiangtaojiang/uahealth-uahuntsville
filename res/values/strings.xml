@@ -10,5 +10,7 @@
     <string name="configBtnText">config</string>
     <string name="configure_server">Server Url:</string>
     <string name="configure_save_to_file">Save To File?</string>
+    <string name="configure_remember_me">Remember Me?</string>
+    <string name="configure_save">Save Configurations</string>
 
 </resources>
