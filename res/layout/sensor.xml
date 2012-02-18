@@ -1,65 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent" 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
-	<LinearLayout
-	    android:layout_width="fill_parent" 
-    	android:layout_height="wrap_content"
-    	android:orientation="horizontal"
-    	android:layout_gravity="center_horizontal"
-    	android:gravity="center_horizontal">
-    	<LinearLayout
-    	    android:layout_width="wrap_content" 
-    		android:layout_height="wrap_content"
-    		android:orientation="vertical"
-    		android:gravity="center_horizontal">
-    		<TextView
-	        	android:layout_width="wrap_content"
-	        	android:layout_height="wrap_content"
-	        	android:text="@string/sensor_hr_text" />
-    	    <TextView
-	        	android:layout_width="wrap_content"
-	        	android:layout_height="wrap_content"
-	        	android:text="@string/sensor_hr"
-	        	android:textSize="100dp"
-	        	android:textColor="#3DC5CC" />
-    	</LinearLayout>    
-	    <LinearLayout
-    	    android:layout_width="wrap_content" 
-    		android:layout_height="wrap_content"
-    		android:orientation="vertical"
-    		android:gravity="center_horizontal">
-    		<TextView
-	        	android:layout_width="wrap_content"
-	        	android:layout_height="wrap_content"
-	        	android:text="@string/sensor_rr_text" />
-    	    <TextView
-	        	android:layout_width="wrap_content"
-	        	android:layout_height="wrap_content"
-	        	android:text="@string/sensor_rr"
-	        	android:textSize="100dp"
-	        	android:textColor="#B3FBFF" />
-    	</LinearLayout>
-	</LinearLayout>
-	<LinearLayout
-	    android:layout_width="fill_parent" 
-    	android:layout_height="wrap_content"
-    	android:orientation="horizontal">
-	    <Button
-	        android:id="@+id/btnEvent"
-	        android:layout_width="90dp"
-	        android:layout_height="wrap_content"
-	        android:text="@string/sensor_event_button_text"
-	        android:layout_marginLeft="10dp" />
-	</LinearLayout>
-	<TextView 
-	    	android:id="@+id/lblSessionDuration"
-	    	android:layout_width="fill_parent"
-	    	android:layout_height="wrap_content"
-	    	android:gravity="center_horizontal"
-	    	android:textSize="60dp"
-	    	android:textColor="#FF8C00"
-	    	android:text="@string/sensor_session_duration_text"/>
+    android:orientation="vertical" >
+
+    <uk.co.jasonfry.android.tools.ui.SwipeView
+        android:id="@+id/swipe_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sensor_hr_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sensor_hr"
+                        android:textColor="#3DC5CC"
+                        android:textSize="100dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sensor_rr_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sensor_rr"
+                        android:textColor="#3DC5CC"
+                        android:textSize="100dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnEvent"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/sensor_event_button_text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblSessionDuration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/sensor_session_duration_text"
+                android:textColor="#FF8C00"
+                android:textSize="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnAddEvent"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/sensor_eventpage_add_button_text" />
+
+            <ListView
+                android:id="@+id/lstViewEvents"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </uk.co.jasonfry.android.tools.ui.SwipeView>
+
 </LinearLayout>
