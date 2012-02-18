@@ -18,5 +18,6 @@
     <string name="sensor_rr_text">respiratory rate</string>
     <string name="sensor_event_button_text">Event</string>
     <string name="sensor_session_duration_text">00:00:00</string>
+    <string name="sensor_eventpage_add_button_text">Add Event</string>
 
 </resources>
