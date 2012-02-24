@@ -37,6 +37,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/sensor_hr"
                         android:textColor="#3DC5CC"
+                        android:id="@+id/txtHR"
                         android:textSize="100dp" />
                 </LinearLayout>
 
@@ -56,6 +57,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/sensor_rr"
                         android:textColor="#3DC5CC"
+                        android:id="@+id/txtRR"
                         android:textSize="100dp" />
                 </LinearLayout>
             </LinearLayout>
