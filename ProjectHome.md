@@ -1,0 +1,1 @@
+Ubiquitous iPhone and Android Medical Application. Uses ANT+ and Bluetooth to local body sensors and store in local phone database and send to remote database for monitoring by health care officials.
